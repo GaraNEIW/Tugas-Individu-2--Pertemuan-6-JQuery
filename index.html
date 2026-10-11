@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Daftar Menu</h1>
+
+  <!-- Fitur 1: pencarian -->
+  <input type="text" id="searchInput" placeholder="Cari menu...">
+
+  <!-- Tombol buka/tutup form (efek jQuery) -->
+  <button id="toggleFormBtn">+ Tambah Menu</button>
+
+  <!-- Fitur 2: form tambah data + validasi -->
+  <form id="addForm" style="display:none;">
+    <input type="text" id="nameInput" placeholder="Nama menu">
+    <input type="text" id="categoryInput" placeholder="Kategori">
+    <button type="submit">Simpan</button>
+    <p id="errorMsg"></p>
+  </form>
+
+  <!-- Wadah kosong: isinya dibuat oleh JavaScript -->
+  <div id="itemList"></div>
+
+  <!-- jQuery dulu, baru script kita -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
